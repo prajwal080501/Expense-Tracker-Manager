@@ -12,7 +12,7 @@ const Home = () => {
     animate={{opacity:1, y:0}}
     exit={{opacity:0, y:100}}
     transition={{duration:0.5}}
-    className="bg-gray-100 w-full h-fit">
+    className="bg-gray-100 w-full h-fit lg:h-screen">
         <Header/>
         <Mobilemenu/>
         <div className="flex w-[99%] justify-center">
