@@ -8,7 +8,7 @@ const Header = () => {
         animate={{opacity:1, y:0}}
         exit={{opacity:0, y:100}}
         transition={{duration:0.5}}
-        className="hidden lg:inline-flex bg-white w-screen h[20vh] px-2 py-4 shadow-md">
+        className="hidden lg:inline-flex bg-white w-screen  px-2 py-4 shadow-md">
             <motion.div 
             initial={{color:"#da0c0c", scale:1.2}}
             animate={{color:"#000", scale:1}}

@@ -3,7 +3,7 @@ import React from 'react'
 const Mobilemenu = () => {
   return (
     // mobile menu
-    <div className='lg:hidden sticky top-0'>
+    <div className='lg:hidden sticky top-0 z-10'>
         <div className='flex  justify-between items-center bg-white w-screen h-16 px-2 py-4 shadow-md'>
             <div className='w-fit text-2xl px-3 font-bold text-left flex items-center justify-center'>
                 Expense Tracker
