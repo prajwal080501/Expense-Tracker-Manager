@@ -1,10 +1,16 @@
 import React from 'react'
 import Transactions from './Transactions'
+import { motion } from 'framer-motion';
 
 const Inputs = () => {
     return (
         <>
-        <div className='w-[100%] lg:w-[90%] mx-auto  mt-5 p-3'>
+        <motion.div
+        initial={{opacity:0, y:-200}}
+        animate={{opacity:1, y:0}}
+        exit={{opacity:0, y:0}}
+        transition={{duration:0.5}}
+         className='w-[100%] lg:w-[90%] mx-auto  mt-5 p-3'>
             <div className="w-full bg-white p-5 rounded-lg shadow-xl">
                 <p className="text-xl font-bold py-2 bg-blue-500 w-fit rounded-lg px-4 mb-3 text-white">Add Transaction</p>
                 <form className="w-full justify-center items-center space-y-3 mx-auto max-w-sm">
@@ -18,7 +24,7 @@ const Inputs = () => {
                 </form>
             </div>
             <Transactions/>
-        </div>
+        </motion.div>
       
         </>
     )

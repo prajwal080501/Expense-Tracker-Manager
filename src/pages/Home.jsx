@@ -4,10 +4,15 @@ import Graph from '../components/Graph'
 import Header from '../components/Header'
 import Inputs from '../components/Inputs'
 import Mobilemenu from '../components/Mobilemenu'
-
+import {motion} from "framer-motion"
 const Home = () => {
   return (
-    <div className="bg-gray-100 w-full h-fit">
+    <motion.div 
+    initial={{opacity:0, y:-100}}
+    animate={{opacity:1, y:0}}
+    exit={{opacity:0, y:100}}
+    transition={{duration:0.5}}
+    className="bg-gray-100 w-full h-fit">
         <Header/>
         <Mobilemenu/>
         <div className="flex w-[99%] justify-center">
@@ -22,7 +27,7 @@ const Home = () => {
                 </div>
                 </div>
         </div>
-    </div>
+    </motion.div>
   )
 }
 
